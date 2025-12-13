@@ -1,41 +1,6 @@
-﻿## Summary
-How do I create packages? See https://docs.chocolatey.org/en-us/create/create-packages
-
-If you are submitting packages to the community feed (https://community.chocolatey.org)
-always try to ensure you have read, understood and adhere to the create
-packages wiki link above.
-
-## Automatic Packaging Updates?
+﻿## Automatic Packaging Updates?
 Consider making this package an automatic package, for the best
 maintainability over time. Read up at https://docs.chocolatey.org/en-us/create/automatic-packages
-
-## Shim Generation
-Any executables you include in the package or download (but don't call
-install against using the built-in functions) will be automatically shimmed.
-
-This means those executables will automatically be included on the path.
-Shim generation runs whether the package is self-contained or uses automation
-scripts.
-
-By default, these are considered console applications.
-
-If the application is a GUI, you should create an empty file next to the exe
-named 'name.exe.gui' e.g. 'bob.exe' would need a file named 'bob.exe.gui'.
-See https://docs.chocolatey.org/en-us/create/create-packages#how-do-i-set-up-shims-for-applications-that-have-a-gui
-
-If you want to ignore the executable, create an empty file next to the exe
-named 'name.exe.ignore' e.g. 'bob.exe' would need a file named
-'bob.exe.ignore'.
-See https://docs.chocolatey.org/en-us/create/create-packages#how-do-i-exclude-executables-from-getting-shims
-
-## Self-Contained?
-If you have a self-contained package, you can remove the automation scripts
-entirely and just include the executables, they will automatically get shimmed,
-which puts them on the path. Ensure you have the legal right to distribute
-the application though. See https://docs.chocolatey.org/en-us/information/legal.
-
-You should read up on the Shim Generation section to familiarize yourself
-on what to do with GUI applications and/or ignoring shims.
 
 ## Automation Scripts
 You have a powerful use of Chocolatey, as you are using PowerShell. So you
@@ -52,9 +17,6 @@ A note about a couple:
 
 ### Getting package specific information
 Use the package parameters pattern - see https://docs.chocolatey.org/en-us/guides/create/parse-packageparameters-argument
-
-### Need to mount an ISO?
-https://docs.chocolatey.org/en-us/guides/create/mount-an-iso-in-chocolatey-package
 
 ### Environment Variables
 Chocolatey makes a number of environment variables available (You can access any of these with $env:TheVariableNameBelow):
@@ -93,14 +55,6 @@ Some environment variables are set based on options that are passed, configurati
  * chocolateyRequestTimeout - How long before a web request will time out. Set by config `webRequestTimeoutSeconds`
  * chocolateyResponseTimeout - How long to wait for a download to complete? Set by config `commandExecutionTimeoutSeconds`
  * ChocolateyPowerShellHost - Are we using the built-in PowerShell host? Set by `--use-system-powershell` or the feature `powershellHost`
-
-#### Business Edition Variables
-
- * ChocolateyInstallArgumentsSensitive - Encrypted arguments passed from command line `--install-arguments-sensitive` that are not logged anywhere.
- * ChocolateyPackageParametersSensitive - Package parameters passed from command line `--package-parameters-sensitive` that are not logged anywhere.
- * ChocolateyLicensedVersion - What version is the licensed edition on?
- * ChocolateyLicenseType - What edition / type of the licensed edition is installed?
- * USER_CONTEXT - The original user context - different when self-service is used (Licensed)
 
 #### Experimental Environment Variables
 The following are experimental or use not recommended:

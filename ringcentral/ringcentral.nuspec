@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Test your packages in a test environment: https://github.com/chocolatey/chocolatey-test-environment -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>ringcentral</id>
@@ -9,12 +8,19 @@
     <authors>RingCentral Inc.</authors>
     <owners>stablestud</owners>
     <projectUrl>https://github.com/stablestud/choco-packages</projectUrl>
-    <iconUrl>https://www.ringcentral.com/content/dam/rc-www/en_us/images/favicon/ringcentral_2.0_icon_favicon.ico</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/stablestud/au-packages@0deba321803cbb2f180cf2a9ce3a8bfd62930d3e/ringcentral/icon/RingCentral.png</iconUrl>
     <copyright>All rights reserved (c) RingCentral Inc.</copyright>
     <projectSourceUrl>https://support.ringcentral.com/download.html</projectSourceUrl>
     <tags>ringcentral ringex</tags>
     <summary>RingCentral RingEX is an AI-powered unified communications app that combines calling, messaging, and video meetings into one platform to streamline business communication</summary>
-    <description>RingCentral RingEX is a modern, cloud-based unified communications and collaboration platform for businesses that combines all essential communication tools into a single app. It brings together voice calls, video meetings, team messaging, SMS/text, and even fax with deep integration into business tools like Salesforce, Google Workspace, and Microsoft Teams to streamline how teams and organizations communicate and collaborate</description>
+    <description>
+<![CDATA[
+RingCentral RingEX is a modern, cloud-based unified communications and collaboration platform for businesses that combines all essential communication tools into a single app.
+
+It brings together voice calls, video meetings, team messaging, SMS/text, and even fax with deep integration into business tools like Salesforce, Google Workspace, and Microsoft Teams to streamline how teams and organizations communicate and collaborate
+
+This package is installing the version [RingCentral App for IT (Non-Auto Update)](https://support.ringcentral.com/download.html) which does not automatically updates itself, it was chosen as this grants more control over the package and avoids potentially broken auto-updater and its vulnerabilities.
+]]></description>
     <releaseNotes>https://support.ringcentral.com/release-notes/ringex/desktop.html</releaseNotes>
   </metadata>
   <files>
