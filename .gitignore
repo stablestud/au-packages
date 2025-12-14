@@ -3,3 +3,5 @@
 **/*.msi
 **/*.exe
 **/*.swp
+report.txt
+update_info.xml
