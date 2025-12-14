@@ -3,7 +3,7 @@
   <metadata>
     <id>ringcentral</id>
     <version>25.4.20</version>
-    <packageSourceUrl>https://github.com/stablestud/choco-packages/ringcentral</packageSourceUrl>-->
+    <packageSourceUrl>https://github.com/stablestud/choco-packages/ringcentral</packageSourceUrl>
     <title>RingCentral App (RingEx)</title>
     <authors>RingCentral Inc.</authors>
     <owners>stablestud</owners>
