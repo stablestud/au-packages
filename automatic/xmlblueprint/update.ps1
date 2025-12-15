@@ -52,4 +52,4 @@ function global:au_SearchReplace {
     }
 }
 
-Update-Package -NoReadme -NoCheckChocoVersion
+Update-Package -NoReadme
