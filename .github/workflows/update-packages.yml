@@ -27,4 +27,5 @@ jobs:
         API_KEY: ${{ secrets.CHOCOLATEY_API_KEY }}
       run: |
         Set-ExecutionPolicy Bypass -Scope Process -Force
-        .\automatic\update_all.ps1 -GitPush -ChocoPush
+        .\update_all.ps1 -GitPush -ChocoPush
+      working-directory: automatic
