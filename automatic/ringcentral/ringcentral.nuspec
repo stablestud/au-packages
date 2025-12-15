@@ -8,7 +8,7 @@
     <authors>RingCentral Inc.</authors>
     <owners>stablestud</owners>
     <projectUrl>https://github.com/stablestud/choco-packages</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/stablestud/au-packages@0deba321803cbb2f180cf2a9ce3a8bfd62930d3e/ringcentral/icon/RingCentral.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/stablestud/au-packages@201dffcabfeedd637223b304571a08226a4ffb68/icons/RingCentral.png</iconUrl>
     <copyright>All rights reserved (c) RingCentral Inc.</copyright>
     <projectSourceUrl>https://support.ringcentral.com/download.html</projectSourceUrl>
     <tags>ringcentral ringex</tags>
