@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>xmlblueprint</id>
+    <version>22.2025.10.29</version>
+    <packageSourceUrl>https://github.com/stablestud/au-packages/tree/master/automatic/xmlblueprint</packageSourceUrl>
+    <title>XMLBlueprint</title>
+    <authors>Monkfish XML Software</authors>
+    <owners>stablestud</owners>
+    <projectUrl>https://www.xmlblueprint.com/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/stablestud/au-packages@201dffcabfeedd637223b304571a08226a4ffb68/icons/xmlblueprint.svg</iconUrl>
+    <copyright>All rights reserved (c) Monkfish XML Software</copyright>
+    <tags>xmlblueprint xml</tags>
+    <summary>XMLBlueprint is a versatile XML editor with advanced features for validation, editing, and formatting, suitable for both professionals and home users.</summary>
+    <description>
+<![CDATA[
+XMLBlueprint is a comprehensive XML editor designed for both professionals and home users.
+
+It offers full support for XML-related technologies like XSD, DTD, Relax NG, Schematron, XSLT, and XPath, enabling efficient editing, validation, and schema management.
+
+Features include automatic validation, context-sensitive tag completion, XML refactoring, a powerful XML formatter, and a generator for creating sample XML from schemas.
+XMLBlueprint also supports large files (up to 1GB+), remote file editing via FTPS, SFTP, and WebDAV, and provides a user-friendly interface with advanced tools like XML folding, an outline view, and breadcrumbs for easy navigation.
+With robust performance, it’s the ideal tool for handling complex XML documents and workflows.
+]]></description>
+    <releaseNotes>https://www.xmlblueprint.com/what-is-new.htm</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
