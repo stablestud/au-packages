@@ -3,14 +3,14 @@
   <metadata>
     <id>ringcentral</id>
     <version>25.4.2012</version>
-    <packageSourceUrl>https://github.com/stablestud/choco-packages/ringcentral</packageSourceUrl>
+    <packageUrl>https://github.com/stablestud/au-packages</packageSourceUrl>
+    <packageSourceUrl>https://github.com/stablestud/au-packages/tree/master/automatic/ringcentral</packageSourceUrl>
     <title>RingCentral App (RingEx)</title>
     <authors>RingCentral Inc.</authors>
     <owners>stablestud</owners>
-    <projectUrl>https://github.com/stablestud/choco-packages</projectUrl>
+    <projectUrl>https://support.ringcentral.com/download.html</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/stablestud/au-packages@201dffcabfeedd637223b304571a08226a4ffb68/icons/RingCentral.png</iconUrl>
     <copyright>All rights reserved (c) RingCentral Inc.</copyright>
-    <projectSourceUrl>https://support.ringcentral.com/download.html</projectSourceUrl>
     <tags>ringcentral ringex</tags>
     <summary>RingCentral RingEX is an AI-powered unified communications app that combines calling, messaging, and video meetings into one platform to streamline business communication</summary>
     <description>
