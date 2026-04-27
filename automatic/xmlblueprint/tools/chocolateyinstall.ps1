@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'https://filedn.eu/l6hrQdIONMfS36XFW6FwzhS/xmlblueprint-22.2026.01.11.exe'
-$checksum   = '3021d77f345d493c8d7d319505e7655e3c63493d401ef152b26071ed450a1d38'
+$url        = 'https://filedn.eu/l6hrQdIONMfS36XFW6FwzhS/xmlblueprint-22.2026.04.16.exe'
+$checksum   = 'ee4734faa265da91992a61f1cbee07fb82add840ef62e3e396bb7f99da9714a1'
 $installerArgs = $env:ChocolateyPackageParameters
 $packageArgs = @{
     packageName   = $env:ChocolateyPackageName
