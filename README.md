@@ -9,7 +9,7 @@ This repository contains [chocolatey automatic packages](https://chocolatey.org/
 To run locally you will need:
 
 - Powershell 5.x
-- [Chocolatey Automatic Package Updater Module](https://github.com/majkinetor/au): `Install-Module chocolatey-au` or `choco install chocolatey-au`
+- [Chocolatey Automatic Package Updater Module](https://github.com/chocolatey-community/chocolatey-au): `Install-Module chocolatey-au` or `choco install chocolatey-au`
 
 ## Update Packages Manually:
 
