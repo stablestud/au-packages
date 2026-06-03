@@ -38,7 +38,7 @@ If you have a license for an old/archived version see [xmlblueprint-archive](htt
   - Note: this parameter is only available from version `21.2024.03.21` and newer
 
 ### Example Parameter Usage
-- `choco install xmlblueprint-archive --params "'/NOICONS /KEY=AGAQQC7SGTSDSDFVAADADBASDFSDTKAQTBDASDFSDF2EAO1'"`
+- `choco install xmlblueprint --params "'/NOICONS /KEY=AGAQQC7SGTSDSDFVAADADBASDFSDTKAQTBDASDFSDF2EAO1'"`
 ]]></description>
     <releaseNotes>https://www.xmlblueprint.com/what-is-new.htm</releaseNotes>
   </metadata>
