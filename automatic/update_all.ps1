@@ -8,7 +8,9 @@
 
 param(
     [switch]$ChocoPush, # if provided, push packages to Chocolatey after building
-    [switch]$GitPush    # if provided, push changes to Git remote and report to Gist
+    [switch]$GitPush,   # if provided, push changes to Git remote and report to Gist
+    [switch]$NoCheckChocoVersion, # if provided, do not check package version against version available on Chocolatey
+    [switch]$Force      # if provided, force push package even if no update is available
 )
 
 if ($ChocoPush) {
@@ -17,12 +19,22 @@ if ($ChocoPush) {
 if ($GitPush) {
     Write-Host "Pushing changes to Git remote enabled"
 }
+if ($NoCheckChocoVersion) {
+    Write-Host "Will not compare version against published Chocolatey package"
+}
+if ($Force) {
+    Write-Host "Force pushing packages to Chocolatey"
+}
+
+
 $global:au_NoPlugins = -not $GitPush.IsPresent
 
 $Options = [ordered]@{
     Timeout   = 100
     Threads   = 15
     Push      = $ChocoPush.IsPresent
+    Force     = $Force.IsPresent
+    NoCheckChocoVersion = $NoCheckChocoVersion.IsPresent
 
     # Save text report in the local file report.txt
     Report = @{

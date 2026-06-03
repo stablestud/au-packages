@@ -35,3 +35,10 @@ To update and push packages to Chocolatey:
 
 - `cd automatic`
 - `$env:API_KEY="CHOCOLATEY_API_KEY"; .\update_all.ps1 -ChocoPush`
+
+Available options:
+
+- `ChocoPush`: push packages to Chocolatey
+- `Force`: push packages even if no update has been found
+- `NoCheckChocoVersion`: do not check if Chocolatey has package version
+- `GitPush`: automatically commit and push changes to upstream Git repo
