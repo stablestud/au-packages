@@ -30,8 +30,8 @@ if ($Force) {
 $global:au_NoPlugins = -not $GitPush.IsPresent
 
 $Options = [ordered]@{
-    Timeout   = 100
-    Threads   = 15
+    Timeout   = 600
+    Threads   = 1
     Push      = $ChocoPush.IsPresent
     Force     = $Force.IsPresent
     NoCheckChocoVersion = $NoCheckChocoVersion.IsPresent
