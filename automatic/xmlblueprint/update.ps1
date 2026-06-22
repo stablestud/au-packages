@@ -17,27 +17,20 @@ function Get-VersionFromUrl {
     return $matches[1]
 }
 
-function Get-NextRedirectLocation {
+function Get-RedirectUrl {
     param (
         [string]$Url
     )
 
-    # Send a HEAD request and prevent redirects; throw an error if request fails
-    $response = Invoke-WebRequest -Uri $Url -Method Head -MaximumRedirection 0 -ErrorAction SilentlyContinue
+    [Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]::SecurityProtocol -bor [Net.SecurityProtocolType]::Tls12
 
-    # Check if Location header is missing
-    if (-not $response.Headers["Location"]) {
-        throw "Location header not found in response."
-    }
-
-    # Extract the 'Location' header which contains the final URL after a possible redirect
-    $location = $response.Headers["Location"]
-    return $location
+    $response = Invoke-WebRequest -Uri $Url -Method Head -UseBasicParsing
+    return $response.BaseResponse.ResponseUri.AbsoluteUri
 }
 
 function global:au_GetLatest {
     $url = "https://www.xmlblueprint.com/update/download-64bit.php"
-    $download = Get-NextRedirectLocation -Url $url
+    $download = Get-RedirectUrl -Url $url
     $version = Get-VersionFromUrl -Url $download
 
     return @{ Version = $version; Url = $download }

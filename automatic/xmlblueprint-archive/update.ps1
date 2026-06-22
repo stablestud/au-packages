@@ -12,6 +12,7 @@ function Get-ArchiveStringsFromUrl {
     )
 
     try {
+        [Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]::SecurityProtocol -bor [Net.SecurityProtocolType]::Tls12
         $content = (Invoke-WebRequest -Uri $Url -UseBasicParsing).Content
     }
     catch {
