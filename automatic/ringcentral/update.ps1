@@ -120,7 +120,7 @@ function Download-FileFromUrl {
 
         # Download file
         Write-Host "Downloading $fileName to $destinationPath"
-        Start-BitsTransfer -Source $Url -Destination $destinationPath
+        Invoke-WebRequest -Uri $Url -OutFile $destinationPath -UseBasicParsing
 
         return $destinationPath
     }
