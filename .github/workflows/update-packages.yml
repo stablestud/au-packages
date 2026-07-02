@@ -10,14 +10,14 @@ jobs:
     runs-on: windows-latest
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@v7
     - name: Install dependencies
       run: choco install chocolatey-au
-#   - name: Setup Git commit author
-#     shell: powershell
-#     run: |
-#       git config --global user.name "github-actions[bot]"
-#       git config --global user.email "github-actions[bot]@users.noreply.github.com"
+    - name: Setup Git commit author
+      shell: powershell
+      run: |
+        git config --global user.name "${{ github.actor }}"
+        git config --global user.email "${{ github.actor }}@users.noreply.github.com"
     - name: Update Chocolatey packages
       shell: powershell
       env:
