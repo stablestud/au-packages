@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url64      = 'https://app.ringcentral.com/download/RingCentral-x64.msi'
-$checksum64 = 'CB852BDB6B20AF64A38733107F4AAF13A46BBD2A3F0EDF2FBFC5C2DFCD10908E'
+$checksum64 = 'E14F5A3DDF7AB990A9F3B4B771B681737EC108F5EF75F7543D205EF4E86B5547'
 $checksumType64 = 'sha256'
 
 $packageArgs = @{
